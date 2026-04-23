@@ -1,4 +1,0 @@
-robot.txt
-User-agent: *
-Allow: /
-Sitemap: https://physicspadhai.netlify.app/sitemap.xml
