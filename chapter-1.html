@@ -1,0 +1,145 @@
+chapter-1.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-1: Electric Charges and Fields - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 1 complete notes: Coulomb's Law, Electric Field, Dipole, Gauss Law with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG FOR $...$ AND $$...$$ 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 1: Electric Charges and Fields</h1>
+        
+        <h2>1. Electric Charge</h2>
+        <p>Charge is the intrinsic property of matter by virtue of which it experiences electromagnetic force. It is a scalar quantity.</p>
+        <div class="formula">
+            SI Unit: Coulomb (C) <br>
+            Dimensional Formula: $[AT]$ <br>
+            Charge on electron: $e = -1.6 \times 10^{-19} C$ <br>
+            Charge on proton: $+1.6 \times 10^{-19} C$
+        </div>
+        
+        <h3>Properties of Charge:</h3>
+        <ul>
+            <li><strong>Additivity:</strong> Total charge = algebraic sum of all charges. $q = q_1 + q_2 + q_3 + ...$</li>
+            <li><strong>Quantization:</strong> Charge exists in discrete packets. $q = \pm ne$ where $n = 1,2,3...$</li>
+            <li><strong>Conservation:</strong> Total charge of an isolated system always remains constant.</li>
+        </ul>
+        <div class="important">
+            <strong>Note:</strong> Charge is invariant. It does not depend on speed of the particle.
+        </div>
+        <h2>2. Coulomb's Law</h2>
+        <p>The force between two point charges is directly proportional to the product of charges and inversely proportional to square of distance between them.</p>
+        <div class="formula">
+            $$F = k \frac{|q_1 q_2|}{r^2}$$
+            Where $k = \frac{1}{4\pi\varepsilon_0} = 9 \times 10^9 Nm^2C^{-2}$ <br>
+            $\varepsilon_0$ = Permittivity of free space = $8.85 \times 10^{-12} C^2N^{-1}m^{-2}$
+        </div>
+        <p>In vector form: $$\vec{F}_{12} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r^2} \hat{r}_{12}$$</p>
+        <div class="note">
+            <strong>Important:</strong> Coulomb's law is valid for point charges only and for distances > $10^{-15}$ m.
+        </div>
+        <h2>3. Electric Field</h2>
+        <p>Space around a charge where its influence can be felt by another charge. It is a vector quantity.</p>
+        <div class="formula">
+            Electric Field Intensity: $$\vec{E} = \frac{\vec{F}}{q_0}$$
+            Due to point charge: $$\vec{E} = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \hat{r}$$
+            SI Unit: $NC^{-1}$ or $Vm^{-1}$
+        </div>
+        <h3>Electric Field Lines: Properties</h3>
+        <ol>
+            <li>Start from positive charge and end on negative charge.</li>
+            <li>Never intersect each other.</li>
+            <li>Do not form closed loops.</li>
+            <li>Density of field lines represents strength of field.</li>
+            <li>Tangent at any point gives direction of $\vec{E}$.</li>
+        </ol>
+        <h2>4. Electric Dipole</h2>
+        <p>A system of two equal and opposite charges separated by a small distance.</p>
+        <div class="formula">
+            Dipole Moment: $\vec{p} = q \times 2\vec{a}$ <br>
+            Direction: From negative to positive charge <br>
+            SI Unit: Coulomb-meter (C-m)
+        </div>
+        <h3>Derivation: Electric Field on Axial Line of Dipole</h3>
+        <p>Point P at distance r from center of dipole on axial line.</p>
+        <div class="formula">
+            $$E_{axial} = \frac{1}{4\pi\varepsilon_0} \frac{2pr}{(r^2 - a^2)^2}$$
+            For $r >> a$: $$E_{axial} = \frac{1}{4\pi\varepsilon_0} \frac{2p}{r^3}$$
+        </div>
+        <h3>Derivation: Electric Field on Equatorial Line of Dipole</h3>
+        <div class="formula">
+            $$E_{equatorial} = \frac{1}{4\pi\varepsilon_0} \frac{p}{(r^2 + a^2)^{3/2}}$$
+            For $r >> a$: $$E_{equatorial} = \frac{1}{4\pi\varepsilon_0} \frac{p}{r^3}$$
+        </div>
+        <div class="important">
+            <strong>Relation:</strong> $E_{axial} = 2 \times E_{equatorial}$ for same distance.
+        </div>
+        <h3>Torque on Dipole in Uniform Electric Field</h3>
+        <div class="formula">
+            $$\vec{\tau} = \vec{p} \times \vec{E}$$
+            $$|\tau| = pE \sin\theta$$
+            Potential Energy: $U = -\vec{p} \cdot \vec{E} = -pE \cos\theta$
+        </div>
+        <h2>5. Electric Flux</h2>
+        <p>Total number of electric field lines passing normally through a surface.</p>
+        <div class="formula">
+            $$\phi_E = \vec{E} \cdot \vec{A} = EA \cos\theta$$
+            For closed surface: $$\phi_E = \oint \vec{E} \cdot d\vec{A}$$
+            SI Unit: $Nm^2C^{-1}$ or $V-m$
+        </div>
+        <h2>6. Gauss's Law</h2>
+        <p>Total electric flux through a closed surface is $\frac{1}{\varepsilon_0}$ times the total charge enclosed.</p>
+        <div class="formula">
+            $$\oint \vec{E} \cdot d\vec{A} = \frac{q_{enclosed}}{\varepsilon_0}$$
+        </div>
+        <h3>Application 1: Field due to Infinitely Long Wire</h3>
+        <div class="formula">
+            $$E = \frac{\lambda}{2\pi\varepsilon_0 r}$$
+            Where $\lambda$ = Linear charge density
+        </div>
+        <h3>Application 2: Field due to Infinite Plane Sheet</h3>
+        <div class="formula">
+            $$E = \frac{\sigma}{2\varepsilon_0}$$
+            Where $\sigma$ = Surface charge density <br>
+            <strong>Note:</strong> E is independent of distance from sheet.
+        </div>
+        <h3>Application 3: Field due to Thin Spherical Shell</h3>
+        <div class="formula">
+            Outside ($r > R$): $$E = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2}$$ <br>
+            On surface ($r = R$): $$E = \frac{1}{4\pi\varepsilon_0} \frac{q}{R^2}$$ <br>
+            Inside ($r < R$): $$E = 0$$
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

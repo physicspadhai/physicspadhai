@@ -1,0 +1,136 @@
+chapter-2.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-2: Electrostatic Potential and Capacitance - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 2 complete notes: Electric Potential, Potential Difference, Capacitors, Dielectrics with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG FOR $...$ AND $$...$$ 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 2: Electrostatic Potential and Capacitance</h1>
+        
+        <h2>1. Electrostatic Potential</h2>
+        <p>Work done in bringing a unit positive test charge from infinity to a point in electric field without acceleration.</p>
+        <div class="formula">
+            $$V = \frac{W}{q_0} = \frac{1}{4\pi\varepsilon_0} \frac{q}{r}$$
+            SI Unit: Volt (V) or $JC^{-1}$ <br>
+            Dimensional Formula: $[ML^2T^{-3}A^{-1}]$
+        </div>
+        <div class="important">
+            <strong>Note:</strong> Potential is a scalar quantity. Potential at infinity is taken as zero.
+        </div>
+        <h2>2. Potential Difference</h2>
+        <p>Work done in moving unit positive charge from one point to another in electric field.</p>
+        <div class="formula">
+            $$V_B - V_A = \frac{W_{AB}}{q_0} = -\int_A^B \vec{E} \cdot d\vec{l}$$
+        </div>
+        <h2>3. Relation between E and V</h2>
+        <div class="formula">
+            $$\vec{E} = -\text{grad } V = -\frac{dV}{dr}\hat{r}$$
+            In Cartesian: $$E_x = -\frac{\partial V}{\partial x}, E_y = -\frac{\partial V}{\partial y}, E_z = -\frac{\partial V}{\partial z}$$
+        </div>
+        <div class="note">
+            <strong>Important:</strong> Electric field is in the direction of decreasing potential.
+        </div>
+        <h2>4. Potential due to Point Charge</h2>
+        <div class="formula">
+            $$V = \frac{1}{4\pi\varepsilon_0} \frac{q}{r}$$
+        </div>
+        <h3>Potential due to System of Charges</h3>
+        <div class="formula">
+            $$V = \frac{1}{4\pi\varepsilon_0} \sum_{i=1}^{n} \frac{q_i}{r_i}$$
+        </div>
+        <h3>Potential due to Electric Dipole</h3>
+        <div class="formula">
+            On axial line: $$V_{axial} = \frac{1}{4\pi\varepsilon_0} \frac{p\cos\theta}{r^2}$$ <br>
+            For $\theta = 0°$: $$V = \frac{1}{4\pi\varepsilon_0} \frac{p}{r^2}$$ <br>
+            On equatorial line: $V = 0$ because $\theta = 90°$
+        </div>
+        <h2>5. Equipotential Surface</h2>
+        <p>Surface on which potential is same at every point.</p>
+        <div class="formula">
+            Properties: <br>
+            1. No work is done in moving charge on equipotential surface. <br>
+            2. Electric field is always perpendicular to equipotential surface. <br>
+            3. Two equipotential surfaces never intersect.
+        </div>
+        <h2>6. Potential Energy of System of Charges</h2>
+        <div class="formula">
+            For two charges: $$U = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r}$$ <br>
+            For three charges: $$U = \frac{1}{4\pi\varepsilon_0} \left[\frac{q_1 q_2}{r_{12}} + \frac{q_2 q_3}{r_{23}} + \frac{q_3 q_1}{r_{31}}\right]$$
+        </div>
+        <h3>Potential Energy of Dipole in External Field</h3>
+        <div class="formula">
+            $$U = -\vec{p} \cdot \vec{E} = -pE\cos\theta$$
+        </div>
+        <h2>7. Capacitance</h2>
+        <p>Ability of a conductor to store charge. Ratio of charge to potential.</p>
+        <div class="formula">
+            $$C = \frac{Q}{V}$$
+            SI Unit: Farad (F) <br>
+            $1 F = 1 CV^{-1}$ <br>
+            Dimensional Formula: $[M^{-1}L^{-2}T^4A^2]$
+        </div>
+        <h2>8. Parallel Plate Capacitor</h2>
+        <div class="formula">
+            Without dielectric: $$C = \frac{\varepsilon_0 A}{d}$$ <br>
+            With dielectric: $$C = \frac{K\varepsilon_0 A}{d} = KC_0$$ <br>
+            Where $K$ = Dielectric constant
+        </div>
+        <h3>Energy Stored in Capacitor</h3>
+        <div class="formula">
+            $$U = \frac{1}{2}CV^2 = \frac{1}{2}QV = \frac{Q^2}{2C}$$
+            Energy density: $$u = \frac{1}{2}\varepsilon_0 E^2$$
+        </div>
+        <h2>9. Combination of Capacitors</h2>
+        <h3>Series Combination:</h3>
+        <div class="formula">
+            $$\frac{1}{C_s} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + ...$$
+            Charge same, Potential divides: $V = V_1 + V_2 + V_3...$
+        </div>
+        <h3>Parallel Combination:</h3>
+        <div class="formula">
+            $$C_p = C_1 + C_2 + C_3 + ...$$
+            Potential same, Charge divides: $Q = Q_1 + Q_2 + Q_3...$
+        </div>
+        <h2>10. Dielectrics and Polarization</h2>
+        <p>Non-conducting materials. When placed in external field, get polarized.</p>
+        <div class="formula">
+            Induced Electric field: $E_p = E_0 - E_{ind}$ <br>
+            $$E = \frac{E_0}{K}$$ where $K$ = dielectric constant <br>
+            Electric Susceptibility: $\chi = K - 1$
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

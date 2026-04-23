@@ -1,0 +1,131 @@
+chapter-8.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-8: Electromagnetic Waves - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 8 complete notes: Displacement Current, EM Waves, EM Spectrum with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 8: Electromagnetic Waves</h1>
+        
+        <h2>1. Displacement Current</h2>
+        <p>Current produced due to time-varying electric field in space.</p>
+        <div class="formula">
+            $$I_d = \varepsilon_0 \frac{d\phi_E}{dt}$$
+            Where $\phi_E$ = Electric flux <br>
+            Need: Ampere's law fails for charging capacitor, so Maxwell added this.
+        </div>
+        <h2>2. Modified Ampere's Circuital Law</h2>
+        <p>Also called Ampere-Maxwell Law</p>
+        <div class="formula">
+            $$\oint \vec{B} \cdot d\vec{l} = \mu_0(I_c + I_d) = \mu_0 I_c + \mu_0\varepsilon_0\frac{d\phi_E}{dt}$$
+            $I_c$ = Conduction current, $I_d$ = Displacement current
+        </div>
+        <h2>3. Maxwell's Equations</h2>
+        <div class="formula">
+            1. Gauss Law in Electrostatics: $$\oint \vec{E} \cdot d\vec{A} = \frac{q}{\varepsilon_0}$$ <br>
+            2. Gauss Law in Magnetism: $$\oint \vec{B} \cdot d\vec{A} = 0$$ <br>
+            3. Faraday's Law: $$\oint \vec{E} \cdot d\vec{l} = -\frac{d\phi_B}{dt}$$ <br>
+            4. Ampere-Maxwell Law: $$\oint \vec{B} \cdot d\vec{l} = \mu_0 I_c + \mu_0\varepsilon_0\frac{d\phi_E}{dt}$$
+        </div>
+        <h2>4. Electromagnetic Waves</h2>
+        <p>Waves produced by accelerated charge. $\vec{E}$ and $\vec{B}$ are perpendicular to each other and to direction of propagation.</p>
+        <div class="formula">
+            Speed in vacuum: $$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}} = 3 \times 10^8 ms^{-1}$$ <br>
+            In medium: $$v = \frac{1}{\sqrt{\mu\varepsilon}} = \frac{c}{\sqrt{\mu_r\varepsilon_r}} = \frac{c}{n}$$ <br>
+            Relation: $$E_0 = cB_0$$
+        </div>
+        <div class="important">
+            <strong>Properties:</strong> Transverse nature, No medium required, Carry energy & momentum, Exert radiation pressure
+        </div>
+        <h2>5. Energy Density of EM Waves</h2>
+        <div class="formula">
+            Electric field energy density: $$u_E = \frac{1}{2}\varepsilon_0 E^2$$ <br>
+            Magnetic field energy density: $$u_B = \frac{B^2}{2\mu_0}$$ <br>
+            Total energy density: $$u = u_E + u_B = \varepsilon_0 E^2 = \frac{B^2}{\mu_0}$$ <br>
+            $u_E = u_B$ in EM wave
+        </div>
+        <h2>6. Electromagnetic Spectrum</h2>
+        <div class="formula">
+            <strong>Order of increasing $\lambda$, decreasing f:</strong> <br>
+            Gamma rays → X-rays → UV → Visible → IR → Microwaves → Radio waves <br>
+            $c = f\lambda$ for all EM waves
+        </div>
+        
+        <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
+            <tr style="background:#f0f0f0">
+                <th style="border:1px solid #ccc; padding:8px">Wave</th>
+                <th style="border:1px solid #ccc; padding:8px">Wavelength Range</th>
+                <th style="border:1px solid #ccc; padding:8px">Uses</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Radio waves</td>
+                <td style="border:1px solid #ccc; padding:8px">$> 0.1 m$</td>
+                <td style="border:1px solid #ccc; padding:8px">Communication, TV</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Microwaves</td>
+                <td style="border:1px solid #ccc; padding:8px">$0.1m$ to $1mm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Radar, Microwave oven</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Infrared</td>
+                <td style="border:1px solid #ccc; padding:8px">$1mm$ to $700nm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Remote, Night vision</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Visible</td>
+                <td style="border:1px solid #ccc; padding:8px">$700nm$ to $400nm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Vision</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Ultraviolet</td>
+                <td style="border:1px solid #ccc; padding:8px">$400nm$ to $1nm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Sterilization</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">X-rays</td>
+                <td style="border:1px solid #ccc; padding:8px">$1nm$ to $10^{-3}nm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Medical imaging</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Gamma rays</td>
+                <td style="border:1px solid #ccc; padding:8px">$< 10^{-3}nm$</td>
+                <td style="border:1px solid #ccc; padding:8px">Cancer treatment</td>
+            </tr>
+        </table>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

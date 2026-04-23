@@ -1,0 +1,127 @@
+chapter-10.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-10: Wave Optics - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 10 complete notes: Huygens Principle, Interference, Diffraction, Polarisation with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 10: Wave Optics</h1>
+        
+        <h2>1. Wavefront</h2>
+        <p>Locus of all points which oscillate in same phase.</p>
+        <div class="formula">
+            Types: Spherical, Cylindrical, Plane wavefront <br>
+            Ray of light is perpendicular to wavefront.
+        </div>
+        <h2>2. Huygens Principle</h2>
+        <p>Each point on wavefront acts as source of secondary wavelets. New wavefront is envelope of these wavelets.</p>
+        <div class="important">
+            <strong>Used to prove:</strong> Laws of reflection, refraction, TIR
+        </div>
+        <h2>3. Interference of Light</h2>
+        <p>Redistribution of energy due to superposition of two coherent waves.</p>
+        <div class="formula">
+            Conditions for sustained interference: <br>
+            1. Sources must be coherent <br>
+            2. Same frequency & amplitude <br>
+            3. Same state of polarisation
+        </div>
+        <h3>Young's Double Slit Experiment (YDSE)</h3>
+        <div class="formula">
+            Path difference: $$\Delta x = d\sin\theta \approx \frac{yd}{D}$$ <br>
+            For bright fringe: $$\Delta x = n\lambda$$ <br>
+            Position: $$y_n = \frac{n\lambda D}{d}$$ <br>
+            For dark fringe: $$\Delta x = (2n-1)\frac{\lambda}{2}$$ <br>
+            Position: $$y_n = \frac{(2n-1)\lambda D}{2d}$$ <br>
+            Fringe width: $$\beta = \frac{\lambda D}{d}$$
+        </div>
+        <h3>Intensity in Interference</h3>
+        <div class="formula">
+            $$I = I_1 + I_2 + 2\sqrt{I_1 I_2}\cos\phi$$ <br>
+            For $I_1 = I_2 = I_0$: $$I = 4I_0\cos^2\frac{\phi}{2}$$ <br>
+            $I_{max} = 4I_0$ when $\phi = 2n\pi$ <br>
+            $I_{min} = 0$ when $\phi = (2n+1)\pi$
+        </div>
+        <h2>4. Diffraction of Light</h2>
+        <p>Bending of light around corners of obstacle/aperture.</p>
+        
+        <h3>Single Slit Diffraction</h3>
+        <div class="formula">
+            For minima: $$a\sin\theta = n\lambda$$ <br>
+            Position: $$y_n = \frac{n\lambda D}{a}$$ <br>
+            Width of central maxima: $$2\beta = \frac{2\lambda D}{a}$$ <br>
+            Secondary maxima: $$a\sin\theta = (2n+1)\frac{\lambda}{2}$$
+        </div>
+        <div class="note">
+            <strong>Difference:</strong> Interference → Few slits, equal width fringes. Diffraction → Single slit, central bright is double width.
+        </div>
+        <h2>5. Resolving Power</h2>
+        <h3>Microscope:</h3>
+        <div class="formula">
+            $$R.P = \frac{1}{d_{min}} = \frac{2n\sin\theta}{\lambda}$$ <br>
+            $n\sin\theta$ = Numerical aperture
+        </div>
+        <h3>Telescope:</h3>
+        <div class="formula">
+            $$R.P = \frac{1}{d\theta} = \frac{D}{1.22\lambda}$$ <br>
+            $D$ = Diameter of objective
+        </div>
+        <h2>6. Polarisation</h2>
+        <p>Restricting vibrations of light to single plane. Proves light is transverse.</p>
+        <h3>Polaroid:</h3>
+        <div class="formula">
+            Long chain molecules aligned in a particular direction. Used to produce plane polarised light.
+        </div>
+        
+        <h3>Malus Law:</h3>
+        <div class="formula">
+            When plane polarised light passes through analyser: <br>
+            $$I = I_0\cos^2\theta$$ <br>
+            $\theta$ = angle between pass-axes of polariser and analyser <br>
+            If $\theta = 0°$: $I = I_0$ max. If $\theta = 90°$: $I = 0$
+        </div>
+        <h3>Brewster's Law:</h3>
+        <div class="formula">
+            $$\tan i_p = n$$ <br>
+            $i_p$ = Polarising angle. Reflected & refracted rays perpendicular.
+        </div>
+        <h3>Uses of Polaroids:</h3>
+        <div class="formula">
+            Sunglasses, 3D movies, Windshield, LCD screens, Photography
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

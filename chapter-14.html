@@ -1,0 +1,183 @@
+chapter-14.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-14: Semiconductor Electronics - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 14 complete notes: Energy Bands, Intrinsic/Extrinsic Semiconductor, p-n Junction, Diode, Transistor, Logic Gates for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 14: Semiconductor Electronics: Materials, Devices and Simple Circuits</h1>
+        
+        <h2>1. Energy Band in Solids</h2>
+        <p>Range of energy possessed by electrons in a solid.</p>
+        <div class="formula">
+            Valence Band: Range of energies of valence electrons <br>
+            Conduction Band: Range of energies of free electrons <br>
+            Forbidden Gap $E_g$: Energy gap between VB and CB
+        </div>
+        <h3>Classification based on $E_g$:</h3>
+        <div class="formula">
+            <strong>1. Conductors:</strong> $E_g = 0$, VB and CB overlap. Ex: Cu, Al <br>
+            <strong>2. Insulators:</strong> $E_g > 3eV$, Large gap. Ex: Diamond $E_g = 6eV$ <br>
+            <strong>3. Semiconductors:</strong> $E_g \approx 1eV$, Small gap. Ex: Si $E_g = 1.1eV$, Ge $E_g = 0.7eV$
+        </div>
+        <h2>2. Intrinsic Semiconductor</h2>
+        <p>Pure semiconductor. No impurities added.</p>
+        <div class="formula">
+            At $T = 0K$: Behaves as insulator <br>
+            At $T > 0K$: Some $e^-$ jump to CB, leaving holes in VB <br>
+            $n_e = n_h = n_i$ where $n_i$ = intrinsic carrier concentration <br>
+            Conductivity: $\sigma = e(n_e\mu_e + n_h\mu_h)$
+        </div>
+        <h2>3. Extrinsic Semiconductor</h2>
+        <p>Doped semiconductor. Conductivity increases.</p>
+        
+        <h3>n-type Semiconductor:</h3>
+        <div class="formula">
+            Doped with Pentavalent impurity: P, As, Sb <br>
+            Donor atoms, $n_e >> n_h$, Majority carriers = electrons <br>
+            Donor energy level just below CB
+        </div>
+        <h3>p-type Semiconductor:</h3>
+        <div class="formula">
+            Doped with Trivalent impurity: B, Al, Ga <br>
+            Acceptor atoms, $n_h >> n_e$, Majority carriers = holes <br>
+            Acceptor energy level just above VB
+        </div>
+        <h2>4. p-n Junction</h2>
+        <p>Formed when p-type and n-type semiconductors are fused together.</p>
+        <div class="formula">
+            Depletion Region: Region devoid of free charge carriers <br>
+            Potential Barrier: $V_0 \approx 0.7V$ for Si, $0.3V$ for Ge <br>
+            Barrier width $\approx 10^{-6}m$
+        </div>
+        <h3>Forward Bias:</h3>
+        <div class="formula">
+            p-side to +ve, n-side to -ve <br>
+            Depletion width decreases, Resistance low <br>
+            Current flows due to majority carriers <br>
+            Knee Voltage: $0.7V$ for Si, $0.3V$ for Ge
+        </div>
+        <h3>Reverse Bias:</h3>
+        <div class="formula">
+            p-side to -ve, n-side to +ve <br>
+            Depletion width increases, Resistance very high <br>
+            Only small reverse saturation current due to minority carriers <br>
+            Breakdown if $V_{reverse} > V_{breakdown}$
+        </div>
+        <h2>5. p-n Junction Diode Applications</h2>
+        
+        <h3>Half Wave Rectifier:</h3>
+        <div class="formula">
+            Output: Pulsating DC <br>
+            Efficiency: $\eta = \frac{40.6}{1 + r_f/R_L}\%$ <br>
+            Max efficiency = $40.6\%$ <br>
+            Ripple factor: $\gamma = 1.21$
+        </div>
+        <h3>Full Wave Rectifier:</h3>
+        <div class="formula">
+            Efficiency: $\eta = \frac{81.2}{1 + r_f/R_L}\%$ <br>
+            Max efficiency = $81.2\%$ <br>
+            Ripple factor: $\gamma = 0.48$
+        </div>
+        <h3>Zener Diode:</h3>
+        <div class="formula">
+            Heavily doped p-n junction, works in reverse breakdown <br>
+            Used as voltage regulator <br>
+            Zener breakdown: Field ionization for $V_z < 6V$ <br>
+            Avalanche breakdown: Collision for $V_z > 6V$
+        </div>
+        <h2>6. Junction Transistor</h2>
+        <p>3-layer semiconductor device: Emitter, Base, Collector</p>
+        
+        <h3>n-p-n Transistor:</h3>
+        <div class="formula">
+            Emitter heavily doped, Base thin & lightly doped, Collector moderately doped <br>
+            Current relation: $$I_E = I_B + I_C$$ <br>
+            $\alpha_{dc} = \frac{I_C}{I_E} \approx 0.98$ <br>
+            $\beta_{dc} = \frac{I_C}{I_B} \approx 50-300$ <br>
+            Relation: $$\beta = \frac{\alpha}{1-\alpha}$$, $$\alpha = \frac{\beta}{1+\beta}$$
+        </div>
+        <h3>Transistor as Amplifier (CE mode):</h3>
+        <div class="formula">
+            Current gain: $$\beta = \frac{\Delta I_C}{\Delta I_B}$$ <br>
+            Voltage gain: $$A_v = \beta\frac{R_C}{R_B}$$ <br>
+            Power gain: $$A_p = \beta^2\frac{R_C}{R_B}$$ <br>
+            Phase difference: $180°$ between input and output
+        </div>
+        <h2>7. Logic Gates</h2>
+        <p>Digital circuits with one or more inputs, one output. Works on Boolean algebra.</p>
+        
+        <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
+            <tr style="background:#f0f0f0">
+                <th style="border:1px solid #ccc; padding:8px">Gate</th>
+                <th style="border:1px solid #ccc; padding:8px">Symbol</th>
+                <th style="border:1px solid #ccc; padding:8px">Boolean Exp</th>
+                <th style="border:1px solid #ccc; padding:8px">Truth Table</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">OR</td>
+                <td style="border:1px solid #ccc; padding:8px">≥1</td>
+                <td style="border:1px solid #ccc; padding:8px">$Y = A + B$</td>
+                <td style="border:1px solid #ccc; padding:8px">0+0=0, else 1</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">AND</td>
+                <td style="border:1px solid #ccc; padding:8px">&</td>
+                <td style="border:1px solid #ccc; padding:8px">$Y = A \cdot B$</td>
+                <td style="border:1px solid #ccc; padding:8px">1·1=1, else 0</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">NOT</td>
+                <td style="border:1px solid #ccc; padding:8px">1</td>
+                <td style="border:1px solid #ccc; padding:8px">$Y = \bar{A}$</td>
+                <td style="border:1px solid #ccc; padding:8px">0→1, 1→0</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">NAND</td>
+                <td style="border:1px solid #ccc; padding:8px">& with o</td>
+                <td style="border:1px solid #ccc; padding:8px">$Y = \overline{A \cdot B}$</td>
+                <td style="border:1px solid #ccc; padding:8px">Universal Gate</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">NOR</td>
+                <td style="border:1px solid #ccc; padding:8px">≥1 with o</td>
+                <td style="border:1px solid #ccc; padding:8px">$Y = \overline{A + B}$</td>
+                <td style="border:1px solid #ccc; padding:8px">Universal Gate</td>
+            </tr>
+        </table>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

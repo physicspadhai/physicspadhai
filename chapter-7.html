@@ -1,0 +1,130 @@
+chapter-7.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-7: Alternating Current - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 7 complete notes: AC Circuits, LCR Circuit, Resonance, Transformer, Power in AC with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 7: Alternating Current</h1>
+        
+        <h2>1. Alternating Current & Voltage</h2>
+        <p>Current/voltage which changes magnitude and direction periodically with time.</p>
+        <div class="formula">
+            $$I = I_0\sin\omega t$$ or $$I = I_0\cos\omega t$$ <br>
+            $$V = V_0\sin\omega t$$ or $$V = V_0\cos\omega t$$ <br>
+            $I_0, V_0$ = Peak values, $\omega = 2\pi f$
+        </div>
+        <h2>2. Mean and RMS Value</h2>
+        <div class="formula">
+            Mean value for full cycle = 0 <br>
+            Mean value for half cycle: $$I_{mean} = \frac{2I_0}{\pi} = 0.637I_0$$ <br>
+            RMS value: $$I_{rms} = \frac{I_0}{\sqrt{2}} = 0.707I_0$$ <br>
+            Similarly: $$V_{rms} = \frac{V_0}{\sqrt{2}}$$
+        </div>
+        <div class="important">
+            <strong>Note:</strong> AC ammeter/voltmeter measure RMS values.
+        </div>
+        <h2>3. AC through Resistor</h2>
+        <div class="formula">
+            $$V = V_0\sin\omega t$$ <br>
+            $$I = \frac{V_0}{R}\sin\omega t = I_0\sin\omega t$$ <br>
+            Phase: V and I in same phase, $\phi = 0°$
+        </div>
+        <h2>4. AC through Inductor</h2>
+        <div class="formula">
+            $$V = V_0\sin\omega t$$ <br>
+            $$I = I_0\sin(\omega t - \pi/2)$$ <br>
+            Current lags voltage by $90°$ <br>
+            Inductive Reactance: $$X_L = \omega L = 2\pi fL$$ <br>
+            $$I_0 = \frac{V_0}{X_L}$$
+        </div>
+        <h2>5. AC through Capacitor</h2>
+        <div class="formula">
+            $$V = V_0\sin\omega t$$ <br>
+            $$I = I_0\sin(\omega t + \pi/2)$$ <br>
+            Current leads voltage by $90°$ <br>
+            Capacitive Reactance: $$X_C = \frac{1}{\omega C} = \frac{1}{2\pi fC}$$ <br>
+            $$I_0 = \frac{V_0}{X_C}$$
+        </div>
+        <h2>6. LCR Series Circuit</h2>
+        <div class="formula">
+            Impedance: $$Z = \sqrt{R^2 + (X_L - X_C)^2}$$ <br>
+            $$Z = \sqrt{R^2 + (\omega L - \frac{1}{\omega C})^2}$$ <br>
+            Current: $$I_0 = \frac{V_0}{Z}$$ <br>
+            Phase angle: $$\tan\phi = \frac{X_L - X_C}{R} = \frac{\omega L - 1/\omega C}{R}$$
+        </div>
+        <h2>7. Resonance in LCR Circuit</h2>
+        <p>Condition when $X_L = X_C$, impedance minimum, current maximum.</p>
+        <div class="formula">
+            Resonant frequency: $$\omega_r = \frac{1}{\sqrt{LC}}$$ or $$f_r = \frac{1}{2\pi\sqrt{LC}}$$ <br>
+            At resonance: $Z = R$ (minimum), $I_0 = \frac{V_0}{R}$ (maximum) <br>
+            Voltage across L = Voltage across C <br>
+            Circuit is purely resistive, $\phi = 0°$
+        </div>
+        <h3>Quality Factor</h3>
+        <div class="formula">
+            $$Q = \frac{\omega_r L}{R} = \frac{1}{\omega_r CR} = \frac{1}{R}\sqrt{\frac{L}{C}}$$ <br>
+            Higher Q = Sharper resonance
+        </div>
+        <h2>8. Power in AC Circuit</h2>
+        <div class="formula">
+            Instantaneous power: $P = VI$ <br>
+            Average power: $$P_{av} = V_{rms}I_{rms}\cos\phi$$ <br>
+            $\cos\phi$ = Power factor <br>
+            For pure L or C: $\phi = 90°$, $P_{av} = 0$ → Wattless current <br>
+            For pure R: $\phi = 0°$, $P_{av} = V_{rms}I_{rms}$
+        </div>
+        <h2>9. LC Oscillations</h2>
+        <div class="formula">
+            Frequency: $$\omega = \frac{1}{\sqrt{LC}}$$ <br>
+            Charge: $$q = q_0\cos\omega t$$ <br>
+            Current: $$I = -I_0\sin\omega t$$ <br>
+            Total energy: $$U = \frac{1}{2}\frac{q_0^2}{C} = \frac{1}{2}LI_0^2$$ = constant
+        </div>
+        <h2>10. Transformer</h2>
+        <p>Device to change AC voltage based on mutual induction.</p>
+        <div class="formula">
+            For ideal transformer: $$\frac{V_s}{V_p} = \frac{N_s}{N_p} = \frac{I_p}{I_s}$$ <br>
+            Step-up: $N_s > N_p$, $V_s > V_p$, $I_s < I_p$ <br>
+            Step-down: $N_s < N_p$, $V_s < V_p$, $I_s > I_p$ <br>
+            Efficiency: $$\eta = \frac{P_{out}}{P_{in}} \times 100\%$$
+        </div>
+        <div class="note">
+            <strong>Energy Losses:</strong> Copper loss, Iron loss, Flux leakage, Hysteresis, Eddy current loss
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+chapter-5.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-5: Magnetism and Matter - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 5 complete notes: Bar Magnet, Magnetic Field Lines, Earth's Magnetism, Magnetic Properties of Materials for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 5: Magnetism and Matter</h1>
+        
+        <h2>1. Bar Magnet</h2>
+        <p>A magnet having two poles - North and South. Monopole does not exist.</p>
+        <div class="formula">
+            Magnetic Dipole Moment: $\vec{M} = m \times 2\vec{l}$ <br>
+            $m$ = pole strength, $2l$ = magnetic length <br>
+            Direction: South to North pole <br>
+            SI Unit: $Am^2$ or $JT^{-1}$
+        </div>
+        <h2>2. Magnetic Field due to Bar Magnet</h2>
+        <h3>On Axial Line:</h3>
+        <div class="formula">
+            $$B_{axial} = \frac{\mu_0}{4\pi} \frac{2Mr}{(r^2 - l^2)^2}$$ <br>
+            For $r >> l$: $$B_{axial} = \frac{\mu_0}{4\pi} \frac{2M}{r^3}$$
+        </div>
+        <h3>On Equatorial Line:</h3>
+        <div class="formula">
+            $$B_{equatorial} = \frac{\mu_0}{4\pi} \frac{M}{(r^2 + l^2)^{3/2}}$$ <br>
+            For $r >> l$: $$B_{equatorial} = \frac{\mu_0}{4\pi} \frac{M}{r^3}$$
+        </div>
+        <div class="important">
+            <strong>Relation:</strong> $B_{axial} = 2 \times B_{equatorial}$
+        </div>
+        <h2>3. Torque on Bar Magnet in Uniform B</h2>
+        <div class="formula">
+            $$\vec{\tau} = \vec{M} \times \vec{B}$$
+            $$|\tau| = MB\sin\theta$$ <br>
+            Potential Energy: $U = -\vec{M} \cdot \vec{B} = -MB\cos\theta$
+        </div>
+        <h2>4. Gauss's Law in Magnetism</h2>
+        <p>Net magnetic flux through any closed surface is always zero.</p>
+        <div class="formula">
+            $$\oint \vec{B} \cdot d\vec{A} = 0$$
+            This implies magnetic monopoles do not exist.
+        </div>
+        <h2>5. Earth's Magnetism</h2>
+        <p>Earth behaves like a huge bar magnet with S pole near geographic north.</p>
+        <div class="formula">
+            Three elements: <br>
+            1. Declination ($\alpha$): Angle between geographic and magnetic meridian <br>
+            2. Dip/Inclination ($\delta$): Angle made by $B_{earth}$ with horizontal <br>
+            3. Horizontal Component: $B_H = B_E \cos\delta$ <br>
+            Vertical Component: $B_V = B_E \sin\delta$ <br>
+            $$B_E = \sqrt{B_H^2 + B_V^2}$$ and $$\tan\delta = \frac{B_V}{B_H}$$
+        </div>
+        <h2>6. Magnetic Properties of Materials</h2>
+        <h3>Magnetisation Intensity:</h3>
+        <div class="formula">
+            $$\vec{I} = \frac{\vec{M}}{V}$$ = Magnetic moment per unit volume <br>
+            SI Unit: $Am^{-1}$
+        </div>
+        <h3>Magnetic Intensity:</h3>
+        <div class="formula">
+            $$\vec{H} = \frac{\vec{B}_0}{\mu_0}$$ <br>
+            $\vec{B}_0$ = Field due to external current only <br>
+            SI Unit: $Am^{-1}$
+        </div>
+        <h3>Relation between B, H and I:</h3>
+        <div class="formula">
+            $$\vec{B} = \mu_0(\vec{H} + \vec{I})$$
+        </div>
+        <h3>Magnetic Susceptibility:</h3>
+        <div class="formula">
+            $$\chi_m = \frac{I}{H}$$
+            Magnetic Permeability: $$\mu = \mu_0(1 + \chi_m)$$ <br>
+            Relative Permeability: $$\mu_r = \frac{\mu}{\mu_0} = 1 + \chi_m$$
+        </div>
+        <h2>7. Classification of Magnetic Materials</h2>
+        <div class="formula">
+            <strong>1. Diamagnetic:</strong> $\chi_m$ small, negative. $\mu_r < 1$ <br>
+            Ex: Cu, Bi, Pb, Water. Repelled by magnet. <br>
+            
+            <strong>2. Paramagnetic:</strong> $\chi_m$ small, positive. $\mu_r > 1$ <br>
+            Ex: Al, Na, Ca. Feebly attracted. <br>
+            
+            <strong>3. Ferromagnetic:</strong> $\chi_m$ large, positive. $\mu_r >> 1$ <br>
+            Ex: Fe, Ni, Co. Strongly attracted. <br>
+            Curie Law: $\chi_m \propto \frac{1}{T}$
+        </div>
+        <h2>8. Hysteresis Loop</h2>
+        <p>Lagging of I or B behind H for ferromagnetic material.</p>
+        <div class="formula">
+            Retentivity: Value of I when H = 0 <br>
+            Coercivity: Value of H when I = 0 <br>
+            Area of loop = Energy loss per cycle per unit volume
+        </div>
+        <div class="note">
+            <strong>Soft Iron:</strong> Small coercivity, small area → Used in electromagnets, transformers <br>
+            <strong>Steel:</strong> Large coercivity, large area → Used in permanent magnets
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

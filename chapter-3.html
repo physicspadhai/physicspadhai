@@ -1,0 +1,158 @@
+chapter-3.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-3: Current Electricity - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 3 complete notes: Ohm's Law, Kirchhoff's Laws, Wheatstone Bridge, Potentiometer with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG FOR $...$ AND $$...$$ 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 3: Current Electricity</h1>
+        
+        <h2>1. Electric Current</h2>
+        <p>Rate of flow of electric charge through any cross-section of a conductor.</p>
+        <div class="formula">
+            $$I = \frac{q}{t} = \frac{dq}{dt}$$
+            SI Unit: Ampere (A) <br>
+            $1 A = 1 Cs^{-1}$ <br>
+            Current is a scalar quantity but has direction of flow.
+        </div>
+        <div class="note">
+            <strong>Convention:</strong> Direction of current is taken as direction of flow of positive charge, opposite to electron flow.
+        </div>
+        <h2>2. Drift Velocity</h2>
+        <p>Average velocity with which free electrons get drifted towards positive end under external electric field.</p>
+        <div class="formula">
+            $$v_d = \frac{eE\tau}{m}$$
+            Where $\tau$ = relaxation time <br>
+            Relation with current: $$I = neAv_d$$ <br>
+            $n$ = number density of electrons, $A$ = area of cross-section
+        </div>
+        <h2>3. Ohm's Law</h2>
+        <p>At constant temperature, current flowing through a conductor is directly proportional to potential difference across its ends.</p>
+        <div class="formula">
+            $$V \propto I$$ or $$V = IR$$
+            Where $R$ = Resistance <br>
+            SI Unit of R: Ohm ($\Omega$) <br>
+            $1 \Omega = 1 VA^{-1}$
+        </div>
+        <div class="important">
+            <strong>Limitations:</strong> Ohm's law is not valid for semiconductors, diodes, electrolytes.
+        </div>
+        <h3>Resistance and Resistivity</h3>
+        <div class="formula">
+            $$R = \rho \frac{l}{A}$$
+            $\rho$ = Resistivity or Specific Resistance <br>
+            SI Unit of $\rho$: $\Omega m$ <br>
+            Conductance: $G = \frac{1}{R}$, Unit: Siemens (S) <br>
+            Conductivity: $\sigma = \frac{1}{\rho}$, Unit: $Sm^{-1}$
+        </div>
+        <h3>Temperature Dependence of Resistance</h3>
+        <div class="formula">
+            $$R_t = R_0[1 + \alpha(t - t_0)]$$
+            $\alpha$ = Temperature coefficient of resistance <br>
+            For metals: $\alpha$ is positive, For semiconductors: $\alpha$ is negative
+        </div>
+        <h2>4. Combination of Resistors</h2>
+        <h3>Series Combination:</h3>
+        <div class="formula">
+            $$R_s = R_1 + R_2 + R_3 + ...$$
+            Current same, Voltage divides: $V = V_1 + V_2 + V_3...$
+        </div>
+        <h3>Parallel Combination:</h3>
+        <div class="formula">
+            $$\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
+            Voltage same, Current divides: $I = I_1 + I_2 + I_3...$
+        </div>
+        <h2>5. Kirchhoff's Laws</h2>
+        <h3>First Law - Junction Rule:</h3>
+        <p>Sum of currents entering a junction = Sum of currents leaving the junction.</p>
+        <div class="formula">
+            $$\sum I = 0$$
+            Based on conservation of charge.
+        </div>
+        <h3>Second Law - Loop Rule:</h3>
+        <p>Algebraic sum of potential changes in a closed loop is zero.</p>
+        <div class="formula">
+            $$\sum V = 0$$ or $$\sum IR + \sum EMF = 0$$
+            Based on conservation of energy.
+        </div>
+        <h2>6. Wheatstone Bridge</h2>
+        <p>Arrangement of four resistors used to measure unknown resistance.</p>
+        <div class="formula">
+            Balanced condition: $$\frac{P}{Q} = \frac{R}{S}$$
+            When galvanometer shows zero deflection, $V_B = V_D$
+        </div>
+        <div class="note">
+            <strong>Note:</strong> Wheatstone bridge is most sensitive when all four resistors are of same order.
+        </div>
+        <h2>7. Meter Bridge</h2>
+        <p>Practical form of Wheatstone bridge to find unknown resistance.</p>
+        <div class="formula">
+            Unknown resistance: $$S = R\frac{(100-l)}{l}$$
+            Where $l$ = balancing length from left end
+        </div>
+        <h2>8. Potentiometer</h2>
+        <p>Device used to measure EMF of cell, internal resistance and to compare EMFs.</p>
+        <div class="formula">
+            Principle: $$V \propto l$$ <br>
+            Comparison of EMFs: $$\frac{E_1}{E_2} = \frac{l_1}{l_2}$$ <br>
+            Internal resistance: $$r = R\left[\frac{l_1 - l_2}{l_2}\right]$$
+        </div>
+        <div class="important">
+            <strong>Advantage:</strong> Potentiometer measures actual EMF because it draws no current at balance point.
+        </div>
+        <h2>9. Cells in Series and Parallel</h2>
+        <h3>Series Combination:</h3>
+        <div class="formula">
+            $$E_{eq} = E_1 + E_2 + E_3...$$ <br>
+            $$r_{eq} = r_1 + r_2 + r_3...$$ <br>
+            Current: $$I = \frac{nE}{R + nr}$$
+        </div>
+        <h3>Parallel Combination:</h3>
+        <div class="formula">
+            For identical cells: $$E_{eq} = E$$ <br>
+            $$r_{eq} = \frac{r}{n}$$ <br>
+            Current: $$I = \frac{E}{R + r/n}$$
+        </div>
+        <h2>10. Electrical Power</h2>
+        <div class="formula">
+            $$P = VI = I^2R = \frac{V^2}{R}$$
+            SI Unit: Watt (W) <br>
+            Electrical Energy: $E = Pt = VIt = I^2Rt$ <br>
+            Commercial unit: 1 kWh = $3.6 \times 10^6$ J
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>

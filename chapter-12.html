@@ -1,0 +1,143 @@
+chapter-12.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Physics Ch-12: Atoms - Notes & Derivations</title>
+    <meta name="description" content="Class 12 Physics Chapter 12 complete notes: Rutherford Model, Bohr Model, Hydrogen Spectrum with all derivations for CBSE 2026.">
+    
+    <!-- MATHJAX CONFIG 👇 -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 12: Atoms</h1>
+        
+        <h2>1. Rutherford's Alpha Scattering Experiment</h2>
+        <p>$\alpha$-particles fired at thin gold foil. Most passed, few deflected, 1 in 8000 bounced back.</p>
+        <div class="formula">
+            Conclusions: <br>
+            1. Atom mostly empty space <br>
+            2. Whole +ve charge & mass concentrated in nucleus <br>
+            3. Nucleus size $\approx 10^{-15}m$, Atom size $\approx 10^{-10}m$
+        </div>
+        <h3>Distance of Closest Approach:</h3>
+        <div class="formula">
+            $$r_0 = \frac{1}{4\pi\varepsilon_0}\frac{2Ze^2}{K}$$ <br>
+            $K$ = K.E of $\alpha$-particle
+        </div>
+        <h3>Impact Parameter:</h3>
+        <div class="formula">
+            $$b = \frac{1}{4\pi\varepsilon_0}\frac{Ze^2\cot(\theta/2)}{K}$$
+        </div>
+        <div class="important">
+            <strong>Drawback:</strong> Could not explain stability of atom & line spectrum. Accelerated electron should radiate energy and fall into nucleus.
+        </div>
+        <h2>2. Bohr's Model of Hydrogen Atom</h2>
+        <h3>Postulates:</h3>
+        <div class="formula">
+            1. Electrons revolve in stable orbits without radiating energy <br>
+            2. Angular momentum quantized: $$mvr = n\frac{h}{2\pi} = n\hbar$$ <br>
+            3. Energy radiated/absorbed when electron jumps: $$h\nu = E_i - E_f$$
+        </div>
+        <h3>Radius of nth Orbit:</h3>
+        <div class="formula">
+            $$r_n = \frac{\varepsilon_0 h^2}{\pi m e^2} \frac{n^2}{Z} = 0.53\frac{n^2}{Z} \text{Å}$$ <br>
+            For H-atom, $Z=1$: $$r_n = 0.53n^2 \text{Å}$$
+        </div>
+        <h3>Velocity of Electron:</h3>
+        <div class="formula">
+            $$v_n = \frac{e^2}{2\varepsilon_0 h}\frac{Z}{n} = \frac{c}{137}\frac{Z}{n}$$ <br>
+            For H, ground state: $v_1 = 2.18 \times 10^6 ms^{-1}$
+        </div>
+        <h3>Energy of Electron:</h3>
+        <div class="formula">
+            $$E_n = -\frac{me^4}{8\varepsilon_0^2 h^2}\frac{Z^2}{n^2} = -13.6\frac{Z^2}{n^2} eV$$ <br>
+            For H-atom: $$E_1 = -13.6 eV$$, $$E_2 = -3.4 eV$$, $$E_3 = -1.51 eV$$ <br>
+            $$E_{\infty} = 0$$, Ionization energy = $13.6 eV$
+        </div>
+        <h3>Frequency & Time Period:</h3>
+        <div class="formula">
+            $$f_n = \frac{v_n}{2\pi r_n} = \frac{me^4}{4\varepsilon_0^2 h^3}\frac{Z^2}{n^3}$$ <br>
+            $$T_n = \frac{1}{f_n} \propto n^3$$
+        </div>
+        <h2>3. Hydrogen Spectrum</h2>
+        <div class="formula">
+            $$\frac{1}{\lambda} = RZ^2\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)$$ <br>
+            $R = 1.097 \times 10^7 m^{-1}$ = Rydberg constant
+        </div>
+        
+        <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
+            <tr style="background:#f0f0f0">
+                <th style="border:1px solid #ccc; padding:8px">Series</th>
+                <th style="border:1px solid #ccc; padding:8px">$n_f$</th>
+                <th style="border:1px solid #ccc; padding:8px">$n_i$</th>
+                <th style="border:1px solid #ccc; padding:8px">Region</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Lyman</td>
+                <td style="border:1px solid #ccc; padding:8px">1</td>
+                <td style="border:1px solid #ccc; padding:8px">2,3,4...</td>
+                <td style="border:1px solid #ccc; padding:8px">UV</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Balmer</td>
+                <td style="border:1px solid #ccc; padding:8px">2</td>
+                <td style="border:1px solid #ccc; padding:8px">3,4,5...</td>
+                <td style="border:1px solid #ccc; padding:8px">Visible</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Paschen</td>
+                <td style="border:1px solid #ccc; padding:8px">3</td>
+                <td style="border:1px solid #ccc; padding:8px">4,5,6...</td>
+                <td style="border:1px solid #ccc; padding:8px">IR</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Brackett</td>
+                <td style="border:1px solid #ccc; padding:8px">4</td>
+                <td style="border:1px solid #ccc; padding:8px">5,6,7...</td>
+                <td style="border:1px solid #ccc; padding:8px">IR</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px">Pfund</td>
+                <td style="border:1px solid #ccc; padding:8px">5</td>
+                <td style="border:1px solid #ccc; padding:8px">6,7,8...</td>
+                <td style="border:1px solid #ccc; padding:8px">IR</td>
+            </tr>
+        </table>
+        <h2>4. Limitations of Bohr Model</h2>
+        <div class="formula">
+            1. Failed for multi-electron atoms <br>
+            2. Could not explain fine structure, Zeeman effect, Stark effect <br>
+            3. Violates Heisenberg uncertainty principle
+        </div>
+        <a href="index.html" class="back-btn">← Back to All Chapters</a>
+    </div>
+    <footer>
+        <a href="about.html">About Us</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="disclaimer.html">Disclaimer</a>
+        <p>© 2026 CBSE Class 12 Physics Notes</p>
+    </footer>
+    <p style="text-align:center; color:gray; font-size:12px; margin-top:30px; padding:10px;">
+      Last Updated: 16 Apr 2026 | physicspadhai.netlify.app
+    </p>
+</body>
+</html>
