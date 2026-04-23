@@ -1,4 +1,3 @@
-robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://physicspadhai.netlify.app/sitemap.xml
+Sitemap: https://physicspadhai.github.io/physicspadhai/sitemap.xml
